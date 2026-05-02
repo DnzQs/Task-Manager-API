@@ -10,3 +10,13 @@ class User(Base):
     hashed_password = Column(String)
 
     tasks = relationship("Task", back_populates="owner")
+
+
+class Task(Base):
+    __tablename__ = "tasks"
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String,nullable=False)
+    description = Column(String)
+    user_id = Column(Integer, ForeignKey("users.id"))
+
+    owner = relationship("User", back_populates="tasks")
