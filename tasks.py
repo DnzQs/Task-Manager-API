@@ -92,4 +92,21 @@ def delete_task(
     return {"message": "Task successfully deleted"}
 
 
+@router.get("/", response_model=list[TaskResponse])
+def get_tasks(
+        limit: int = 10,
+        offset: int = 0,
+        skip: int = 0,
+        db: Session = Depends(get_db),
+        user_email: str = Depends(get_current_user)
+):
+    user = db.query(User).filter(User.email == user_email).first()
+
+    return db.query(Task)\
+        .filter(Task.user_id == user.id)\
+        .offset(offset)\
+        .limit(limit)\
+        .all()
+
+
 
