@@ -5,6 +5,18 @@ class UserCreate(BaseModel):
     password: str
 
 
-class Taskcreate(BaseModel):
+class TaskBase(BaseModel):
     title: str
-    description: str | None=None
+    description: str | None = None
+
+
+class TaskCreate(BaseModel):
+    pass
+
+
+class TaskResponse(BaseModel):
+    id: int
+
+    class Config:
+        from_attributes = True
+
