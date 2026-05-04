@@ -5,7 +5,6 @@ from app.db import get_db
 from app.models import User
 from app.schemas import UserCreate
 from app.utils import hash_password, create_access_token
-from test1.auth import verify_password
 
 router = APIRouter()
 
