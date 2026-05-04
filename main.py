@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
-from app_API.db import Base, engine
-from app_API.models import User
-from app_API.routes import auth
-from app_API.routes import task
+from app.db import Base, engine
+from app.models import User
+from app.routes import auth
+from app.routes import tasks
 
 Base.metadata.create_all(bind=engine)
 
