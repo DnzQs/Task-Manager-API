@@ -35,19 +35,19 @@ This project is a RESTful API built with FastAPI that allows users to:
 
 * JWT-based authentication
 
-##Tasks
+## Tasks
 
-*Create task
+* Create task
 
-*Get user tasks
+* Get user tasks
 
-*Update task
+* Update task
 
-*Delete task
+* Delete task
 
-*Filter by title
+* Filter by title
 
-*Pagination (limit / offset)
+* Pagination (limit / offset)
 
 ## Project structure:
 app/
