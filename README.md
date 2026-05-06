@@ -12,7 +12,7 @@ This project is a RESTful API built with FastAPI that allows users to:
 
 * use filtering and pagination
 
-# Tech Stack:
+## Tech Stack:
 
 * FastAPI
 
