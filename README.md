@@ -1,7 +1,7 @@
 ## Task Manager API
 A backend REST API for managing tasks with user authentication.
 
-##Description:
+# Description:
 This project is a RESTful API built with FastAPI that allows users to:
 
 * register and authenticate (JWT)
@@ -69,7 +69,7 @@ utils.py
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
-## Using Docker
+# Using Docker
 chose the directory where file downloaded
 docker-compose up --build
 
@@ -81,7 +81,7 @@ http://localhost:8000/docs
 Use Bearer Token:
 Authorization: Bearer <your_token>
 
-#Environment Variables
+# Environment Variables
 Create a .env file based on .env.example:
 
 DATABASE_URL=postgresql://postgres:postgres@db:5432/task_manager_db
