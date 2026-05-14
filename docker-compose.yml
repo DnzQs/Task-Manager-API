@@ -19,7 +19,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql://user:pasword@db:5432/task_manager_db
+      DATABASE_URL: postgresql://user:password@db:5432/task_manager_db
     ports:
       - "8000:8000"
 
