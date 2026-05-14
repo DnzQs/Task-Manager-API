@@ -84,6 +84,6 @@ Authorization: Bearer <your_token>
 ## Environment Variables
 Create a .env file based on .env.example:
 
-DATABASE_URL=postgresql://user:pasword@db:5432/task_manager_db
+DATABASE_URL=postgresql://user:password@db:5432/task_manager_db
 
 SECRET_KEY=your_secret_key
